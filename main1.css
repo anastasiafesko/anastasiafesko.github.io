@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela|PT+Sans|Nunito');
+body{
+font-family: "Gabriela";
+font-weight: 300;
+font-size: 18px;
+color: #555;
+
+-webkit-font-smoothing: antialiased;
+-webkit-overflow-scrolling: touch;
+
+}
+
+h1, h2 {
+  font-family: "Nunito";
+  font-size: 68px;
+  }
+h3 {
+      font-family: "Gabriela";
+      font-weight: 150;
+      font-size: 35px;
+      }
+h4 {
+    font-family: "Nunito";
+    font-weight: 150;
+    font-size: 40px;
+    }
+h5 {
+    font-family: "PT Sans";
+    font-weight: 150;
+    font-size: 30px;
+    }
+h6 {
+    font-family: "PT Sans";
+    font-weight: 150;
+    font-size: 20px;
+    }
+  p {
+line-height: 28px;
+margin-bottom: 25px;
+    }
+a {
+color: #fff5c2;
+text-align: left;
+  }
+.news{
+  color: #160dbf;
+    }
+a:hover, a:focus {
+color: #fff5c2;
+text-decoration: none;
+outline: 0;
+}
+hr{
+display:block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}
+
+.navbar{
+font-size: 19px;
+background-color:#f5fffa;
+}
+.navbar-inverse{
+background: #f0fff0;
+border-color: #f0fff0;
+}
+
+.headerwrap{
+  background: url("header.jpg") no-repeat center center;
+  margin-top: 10px;
+  text-align: right;
+  background-attachment: relative;
+  background-position: center center;
+
+  min-height: 850px;
+  width: 100%;
+  background-size: 100%;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+/*круг с треугольником*/
+.ph{
+  width: 62px;
+  height: 68px;
+}
+/*hh*/
+.thumb img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.thumb img:hover {
+    -webkit-filter: opacity(1);
+    filter: opacity(80%);
+}
+
+.thumb {
+    padding: 5px;
+}
+#go-top {
+position: fixed;
+bottom: 25px;
+right: 10px;
+cursor: pointer;
+display: none;
+width: 40px;
+height: 20px;
+
+}
+
+#go-top img {
+-webkit-transform: rotate(-180deg);
+}
+
+/*для разделов*/
+
+.animate {
+	font-size: 30px;
+  font-family: "PT Sans";
+  text-align: center;
+	}
+.animate span {
+	display: inline-block;
+}
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+/* Animation */
+.one span {
+	opacity: 0;
+	transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+	animation: revolveScale .4s forwards;
+}
+
+@keyframes revolveScale {
+	60% {
+		transform: translate(20px, 20px) rotate(30deg) scale(.3);
+	}
+	100% {
+		transform: translate(0) rotate(0) scale(1);
+		opacity: 1;
+	}
+}
+/*Назад к альбомам*/
+.right1_3{
+        color: #5587c4;
+    text-decoration: none;
+        font:500 19px arial;
+        display: table;
+}
+
+.right1_3:after {
+  transition: margin .25s, opacity .25s, transform .25s;
+  transform: rotate(-180deg);
+  opacity: 0;
+  margin-left: -10px;
+  content: '\f0a8';
+  font-family: 'FontAwesome';
+  display: inline-block;
+}
+
+.right1_3:hover{color:#FFD700;}
+.right1_3:hover:after {
+  transition: margin .5s, opacity .25s, transform .5s;
+  transform: rotate(0);
+  opacity: 1;
+  margin-left: .7em;
+}
+
+/*картинки альбома*/
+img.img-responsive:hover {
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+opacity: 0.6;/* прозрачность для других браузеров */
+
+}

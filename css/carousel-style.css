@@ -1,0 +1,86 @@
+.container-comments {
+	max-width: 960px;
+	width: 90%;
+	margin:0 auto;
+}
+#testimonials {
+	position: relative;
+	/*min-height: 550px;*/
+	/*padding: 50px 0;*/
+}
+/*inner-testimonial — данный класс также необходим для более комфортного управления отдельным блоком с отзывом.*/
+.inner-testimonial {
+	text-align: center;
+	background-color: transparent;
+}
+.inner-testimonial > img{
+	max-width: 110px;
+	margin: 0 auto -30px;
+	opacity: 0;
+	-webkit-transition:all 1.3s linear;
+	transition:all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img{
+	-webkit-transition:all 1.3s linear;
+	transition:all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img.full-opacity {
+	opacity:1;
+	-webkit-transition:all 0.3s linear;
+	transition:all 0.3s linear;
+}
+
+h3.city-name {
+	padding: 0;
+	margin: 0;
+	padding: 10px 0;
+	font-size: 22px;
+	line-height: 24px;
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: white;
+}
+
+p.text-testimonial {
+	padding: 0;
+	margin: 0;
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: white;
+}
+
+/*block-items — чтобы было легче работать с большим блоком слайдера. 
+Поэтому сейчас не составит труда сделать отступы и выровнять слайдер так, как мы этого захотим.*/
+.block-items {
+	cursor: default;
+}
+
+/*Изменяем внешний вид элементов управления (точки) */
+.owl-theme .owl-dots .owl-dot span {
+	width: 14px;
+	height: 14px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+	width: 16px;
+	height: 16px;
+}
+
+.convert-comment {
+	background-color: #49AB95;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border-radius: 15px;
+}
+/*Классы animated bounceIn full-opacity — у первого изображения в отзыве мы присваиваем вот эти классы. 
+В каждом из примеров классы отличаются, потому что анимация разная. 
+Но есть 2 класса, которые используются постоянно — это класс "animated", используемый библиотекой animate.css, 
+чтобы указать, что у данного элемента будет анимация и класс full-opacity, 
+который необходим именно для регулярного появления изображений при скролле слайдера.*/
